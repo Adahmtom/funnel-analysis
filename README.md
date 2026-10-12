@@ -1,10 +1,10 @@
 # Conversion Funnel Analysis (SQL)
 
 Where do users drop off between landing on the site and paying? This is a funnel analysis for FormWise, a made-up
-online legal-document subscription service. The data is simulated. `data/generate_data.py` builds a SQLite database
+online legal-document subscription service. The data is simulated. generate_data.py builds a SQLite database
 with 180,000 visitors and the events they triggered.
 
-The metrics are written in SQL (see `sql/`). The notebook runs the queries, adds a few stats tests, and makes the
+The metrics are written in SQL. The notebook runs the queries, adds a few stats tests, and makes the
 charts.
 
 ## Queries
@@ -28,7 +28,7 @@ which has duplicates and some missing IDs.
 - The will template has the lowest completion on both devices.
 - Closing half the mobile gap would mean about **18% more mobile purchases**.
 
-![Form completion by document type](figures/form_completion_by_doc.png)
+![Form completion by document type] form_completion_by_doc.png
 
 ## Recommendations
 1. Make the mobile form the top funnel priority.
